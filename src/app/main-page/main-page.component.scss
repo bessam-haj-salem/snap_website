@@ -1,0 +1,64 @@
+@import "../../styles/styles.scss";
+
+.blur {
+  filter: blur(8px);
+//   opacity: 0.5;
+}
+
+// .row {
+//   display: flex;
+// }
+
+.img_main {
+  background-image: url("../../assets/images/image-hero-mobile.png");
+  background-size: cover;
+  background-repeat:no-repeat;
+  padding-bottom: 100%;
+  width: 100%;
+}
+
+.main_text {
+  padding: 0.9rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+}
+.title {
+  // text-align: center;
+  margin-top: 1rem;
+  @include font-epilogue-700;
+  font-size: 2rem;
+  width: 100%;
+
+}
+p {
+  @include font-epilogue-500;
+  color: $Medium-Gray;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.btn {
+  @include font-epilogue-700;
+  color: $Almost-White;
+  padding: 0.9rem 1rem;
+  background-color: $Almost-Black;
+  width: 40%;
+  font-size: 0.9rem;
+  margin: 0 auto 2rem;
+  border-radius: 15px;
+}
+.list_partner {
+  display: flex;
+  justify-content: space-between;
+  .list_audio {
+    width: 15%;
+    height: 15%;
+  }
+  .list_img {
+    width: 20%;
+    height: 20%;
+  }
+}

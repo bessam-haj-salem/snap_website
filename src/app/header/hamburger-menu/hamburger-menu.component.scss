@@ -1,0 +1,129 @@
+@import "../../../styles/styles.scss";
+
+.hamburger {
+  display: block;
+  .homeside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .burger-icon {
+      span {
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: $Almost-Black;
+        margin: 6px 0;
+      }
+    }
+  }
+  .sidenav {
+    height: 100%;
+    width: 269px;
+    position: fixed;
+    top: -5.4rem;
+    z-index: 1;
+    right: -250px;
+    background-color: hsl(36, 100%, 99%);
+    padding-top: 10rem;
+    transition: right 0.5s ease;
+    a {
+      padding: 1rem 1rem 1rem 2rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: $Almost-Black;
+      display: block;
+      transition: 0.3s;
+    }
+    a:hover {
+      color: #111;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      .list {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 3rem;
+        margin-top: 0.8rem;
+        // align-items: center;
+        .list_down {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 1rem;
+          gap: 1rem;
+          img {
+            width: 1.5rem;
+          }
+          .label-down {
+            @include font-epilogue-500;
+            color: $Medium-Gray;
+            margin: 0.2rem 0 0;
+            width: 100%;
+          }
+        }
+      }
+      &.login {
+        margin-top: 1rem;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li {
+          width: 80%;
+          margin: 0;
+          padding: 0.8rem 1rem;
+          border-radius: 15px;
+          &.register {
+            margin-top: 1rem;
+            border: 2px solid $Medium-Gray;
+          }
+          a {
+            text-align: center;
+            padding: 0;
+            font-size: 0.9rem;
+          }
+        }
+      }
+      li a {
+        @include font-epilogue-500;
+        font-size: 1rem;
+        color: $Medium-Gray;
+        .img_arrow {
+          margin: 0 0 0.1rem 0.8rem;
+        }
+      }
+    }
+    &.active {
+      right: 0;
+      top: -5.4rem;
+    }
+
+    .close {
+      position: absolute;
+      font-weight: 400;
+      top: 4rem;
+      right: 0rem;
+      font-size: 4rem;
+      color: $Almost-Black;
+    }
+  }
+}
+
+.blur {
+  filter: blur(8px);
+  //   opacity: 0.5;
+}
+.textBright {
+  @include font-epilogue-700;
+  width: 40%;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+@media (min-width: 870px) {
+  .hamburger {
+    display: none;
+  }
+}

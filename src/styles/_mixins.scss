@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+@mixin font-epilogue-500 {
+  font-family: 'Epilogue', sans-serif;;
+  font-weight: 500;
+}
+
+@mixin font-epilogue-700 {
+    font-family: 'Epilogue', sans-serif;;
+    font-weight: 700;
+  }

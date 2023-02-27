@@ -1,0 +1,77 @@
+<div class="menu">
+  <div class="first_title">
+    <div class="textBright">snap</div>
+    <ul class="relative_ul">
+      <li>
+        <a href="#"
+          >Features
+          <img
+            src="../../../assets/images/icon-arrow-down.svg"
+            alt=""
+            *ngIf="!feature_list"
+            class="img_arrow"
+            (click)="openList()" />
+          <img
+            src="../../../assets/images/icon-arrow-up.svg"
+            *ngIf="feature_list"
+            class="img_arrow"
+            alt=""
+            (click)="openList()"
+        /></a>
+      </li>
+      <div class="list" *ngIf="feature_list">
+        <div class="list_down">
+          <img src="../../../assets/images/icon-todo.svg" alt="" />
+          <div class="label-down">Todo List</div>
+        </div>
+        <div class="list_down">
+          <img src="../../../assets/images/icon-calendar.svg" alt="" />
+          <div class="label-down">Calendar</div>
+        </div>
+        <div class="list_down">
+          <img src="../../../assets/images/icon-reminders.svg" alt="" />
+          <div class="label-down">Reminders</div>
+        </div>
+        <div class="list_down">
+          <img src="../../../assets/images/icon-planning.svg" alt="" />
+          <div class="label-down">Planning</div>
+        </div>
+      </div>
+      <li>
+        <a href="#"
+          >Company<img
+            src="../../../assets/images/icon-arrow-down.svg"
+            alt=""
+            *ngIf="!feature_list_company"
+            class="img_arrow"
+            (click)="openListCompany()" />
+          <img
+            src="../../../assets/images/icon-arrow-up.svg"
+            *ngIf="feature_list_company"
+            class="img_arrow"
+            alt=""
+            (click)="openListCompany()"
+        /></a>
+      </li>
+      <div class="list_company" *ngIf="feature_list_company">
+        <div class="list_down">
+          <div class="label-down">History</div>
+        </div>
+        <div class="list_down">
+          <div class="label-down">Our Team</div>
+        </div>
+        <div class="list_down">
+          <div class="label-down">Blog</div>
+        </div>
+      </div>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+ 
+    <ul class="login">
+      <li><a href="#">Login</a></li>
+      <li class="register"><a href="#">Register</a></li>
+    </ul>
+  
+</div>

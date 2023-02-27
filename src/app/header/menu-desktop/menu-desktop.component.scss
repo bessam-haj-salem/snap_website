@@ -1,0 +1,84 @@
+@import '../../../styles/styles.scss';
+.menu {
+  display: none;
+}
+
+@media (min-width: 870px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    .first_title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .features_flex {
+      display: flex
+    }
+    .textBright {
+      // width: 40%;
+      @include font-epilogue-700;
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+    .relative_ul {
+      position: relative;
+    }
+    .list, .list_company {
+      // border: 1px solid red;
+      position: absolute;
+     
+      // z-index: 1;
+      background-color: $Almost-White;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .list {
+      top: 3rem;
+      left: -2rem;
+    }
+    .list_company {
+      top: 3rem;
+      left: 11rem;
+    }
+    .list_down {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+      gap: 1rem;
+      img {
+        width: 1.5rem;
+      }
+      .label-down {
+        @include font-epilogue-500;
+        color: $Medium-Gray;
+        margin: 0.2rem 0 0;
+        width: 100%;
+      }
+    }
+      ul {
+        display: flex;
+        list-style-type: none;
+        gap: 3rem;
+        li a {
+          @include font-epilogue-500;
+          text-decoration: none;
+          font-size: 1rem;
+          color: $Medium-Gray;
+          .img_arrow {
+            margin: 0 0 0.1rem 0.8rem;
+          }
+        }
+        .register a{
+          border: 2px solid $Medium-Gray;
+          padding: 0.5rem 1.5rem;
+          border-radius: 15px;
+         
+        }
+      }
+    
+  }
+}
