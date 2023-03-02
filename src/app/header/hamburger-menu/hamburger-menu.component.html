@@ -1,6 +1,6 @@
 <div class="hamburger">
   <div class="homeside">
-    <div id="logo" [ngClass]="{ textBright: !open || open, blur: open }">
+    <div id="logo" [ngClass]="{ 'textBright': true, 'blur': open }">
       snap
     </div>
     <a href="#" id="openBtn" (click)="openNav()">
@@ -11,7 +11,7 @@
       </span>
     </a>
   </div>
-  <div id="mysidenav" [ngClass]="{ sidenav: !open || open, active: open }">
+  <div id="mysidenav" [ngClass]="{ 'sidenav': true, 'active': open }">
     <a id="closeBtn" href="#" class="close" (click)="closeNav()">×</a>
     <div class="menu_list">
       <ul>

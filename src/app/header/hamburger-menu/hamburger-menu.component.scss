@@ -19,7 +19,7 @@
   }
   .sidenav {
     height: 100%;
-    width: 269px;
+    // width: 269px;
     position: fixed;
     top: -5.4rem;
     z-index: 1;
@@ -98,6 +98,7 @@
     &.active {
       right: 0;
       top: -5.4rem;
+      width: 65%;
     }
 
     .close {

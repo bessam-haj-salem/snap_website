@@ -1,8 +1,10 @@
-<div [ngClass]="{ blur: (open$ | async) }">
+<div [ngClass]="{ 'blur': (open$ | async) }">
   <div class="container row">
-    <div class="img_main"></div>
-    <div class="main_text">
-      <div class="title">Make remote work</div>
+    <div class="col image">
+      <div class="img_main_mobile"></div>
+    </div>
+    <div class="col text">
+      <div class="title">Make<br class="br_mobile"> remote work</div>
       <p>
         Get your team in sync, no matter your location. Streamline processes,
         create team rituals, and watch productivity soar.
